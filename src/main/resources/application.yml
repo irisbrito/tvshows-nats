@@ -1,0 +1,14 @@
+micronaut:
+  application:
+    name: firstProjectNats
+  server:
+    cors:
+      enabled: true
+    port: 8080
+endpoints:
+  health:
+    enabled: true
+nats:
+  addresses: localhost:4222
+  username: guest
+  password: guest
