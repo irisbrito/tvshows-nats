@@ -15,7 +15,6 @@ class SerieController(private val serieService: SerieService) {
 
     @Post
     fun create(@Body serie: Serie): HttpResponse<Any> {
-        serieService.send(Serie(UUID.randomUUID(), serie.name, serie.description, serie.description, serie.whereToWatch))
         logger.info("Saving serie! $serie")
         return HttpResponse.created(HttpStatus.ACCEPTED).body(this.serieService.send(serie))
 
@@ -23,7 +22,6 @@ class SerieController(private val serieService: SerieService) {
 
     @Put("/{id}")
     fun update(@PathVariable uuid: UUID, @Body serie: Serie): HttpResponse<Serie> {
-        serieService.send(Serie(serie.id, serie.name, serie.description, serie.description, serie.whereToWatch))
         return HttpResponse.ok(HttpStatus.OK).body(this.serieService.send(serie))
     }
 }
