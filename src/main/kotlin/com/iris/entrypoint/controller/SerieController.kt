@@ -1,7 +1,7 @@
-package com.iris.controller
+package com.iris.entrypoint.controller
 
-import com.iris.model.Serie
-import com.iris.service.SerieService
+import com.iris.core.model.Serie
+import com.iris.core.port.SerieService
 import io.micronaut.http.HttpResponse
 import io.micronaut.http.HttpStatus
 import io.micronaut.http.annotation.*

@@ -1,5 +1,6 @@
-package com.iris.model
+package com.iris.infrastructure.model
 
+import com.iris.core.model.Serie
 import java.util.*
 
 data class EventsInformationDto(

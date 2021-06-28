@@ -1,6 +1,6 @@
-package com.iris.cilent
+package com.iris.infrastructure.cilent
 
-import com.iris.model.Serie
+import com.iris.core.model.Serie
 import io.micronaut.nats.annotation.NatsClient
 import io.micronaut.nats.annotation.Subject
 

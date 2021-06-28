@@ -1,12 +1,13 @@
-package com.iris.service
+package com.iris.core.service
 
-import com.iris.cilent.SerieClient
-import com.iris.model.Serie
+import com.iris.infrastructure.cilent.SerieClient
+import com.iris.core.model.Serie
+import com.iris.core.port.SerieService
 import org.slf4j.LoggerFactory
 import javax.inject.Singleton
 
 @Singleton
-class SerieServiceImpl(private val serieClient: SerieClient ) : SerieService {
+class SerieServiceImpl(private val serieClient: SerieClient) : SerieService {
 
     private val logger = LoggerFactory.getLogger(SerieServiceImpl::class.java)
 

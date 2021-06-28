@@ -1,6 +1,6 @@
-package com.iris.service
+package com.iris.core.port
 
-import com.iris.model.Serie
+import com.iris.core.model.Serie
 import javax.inject.Singleton
 
 @Singleton

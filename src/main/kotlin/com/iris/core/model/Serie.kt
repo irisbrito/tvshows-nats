@@ -1,4 +1,4 @@
-package com.iris.model
+package com.iris.core.model
 
 import java.util.*
 
