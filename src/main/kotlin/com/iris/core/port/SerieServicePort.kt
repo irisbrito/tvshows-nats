@@ -4,6 +4,6 @@ import com.iris.core.model.Serie
 import javax.inject.Singleton
 
 @Singleton
-interface SerieService {
+interface SerieServicePort {
     fun send(serie: Serie): Serie
 }
