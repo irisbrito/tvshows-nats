@@ -29,4 +29,10 @@ class SerieControllerTest : AnnotationSpec() {
         result shouldBe serie
     }
 
+    @Test
+    fun `should send serie to update`(){
+        every {service.send(any()) } answers {serie}
+        val result = serieController.update(id, serie).body()
+        result shouldBe serie
+    }
 }
